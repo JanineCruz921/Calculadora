@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CalculadoraFunções.css">
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="DivPrincipal">
+            <h1>Calculadora</h1>
+            <button id="botão" onclick="exibir()">Start</button>
+
+        </div>
+        <div class="SegundaPágina">
+            <input id="inputvalor1" placeholder="Digite aqui um número"></input>
+            <input id="inputvalor2" placeholder="Digite aqui um segundo número"></input>
+            <input id="inputoperacao" placeholder="Digite aqui a operação desejada"></input>
+            <button type="submit" id="botaoCalcular" onclick="VerificarOperacao();">Calcular</button>
+        </div>
+        <div class="páginaResultado">
+            <p></p>
+        </div>
+    </div>
+    <script src="CalculadoraFunções.js"></script>
+</body>
+
+</html>

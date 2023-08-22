@@ -1,0 +1,132 @@
+Body {
+    display: flex;
+    padding: 5%;
+    margin: 0%;
+    background-color: rgb(0, 94, 255);
+}
+
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.DivPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(67, 1, 94));
+    height: 400px;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.DivPrincipal h1 {
+    color: #fff;
+    font-size: 300%;
+}
+
+#botão {
+    height: 10%;
+    width: 70%;
+    background-color: rgb(75, 4, 119);
+    color: #fff;
+    border-style: none;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 190%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.SegundaPágina {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(67, 1, 94));
+    height: 400px;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.SegundaPágina input{
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+    height: 10%;
+    width: 60%;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    border-radius: 8px;
+    border-style: none;
+}
+
+#botaoCalcular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 50%;
+    background-color: rgb(66, 66, 66);
+    color: #ffffff;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 5%;
+    font-weight: 900;
+    font-size: 100%;
+
+}
+
+.páginaResultado{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(67, 1, 94));
+    color: #fff;
+    height: 400px;
+    width: 500px;
+    border-radius: 15px;
+    font-size: 200%;
+}
+
+.páginaResultado button{
+    height: 10%;
+    width: 50%;
+    background-color: rgb(75, 4, 119);
+    margin-top: 5%;
+    color: #fff;
+    border-style: none;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.SegundaPágina button:hover{
+    background-color: rgb(66, 67, 67);
+    color: #fff;
+    cursor: pointer;
+}
+
+#botão:hover{
+    background-color: rgb(126, 3, 241);
+    color: black;
+    cursor: pointer;
+}
+
+#botaoCalcular:hover{
+    background-color: rgb(126, 3, 241);
+    color: white;
+    cursor: pointer;
+}
+
+.páginaResultado button:hover{
+    background-color: rgb(126, 3, 241);
+    cursor: pointer;
+}
