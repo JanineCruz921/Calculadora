@@ -11,16 +11,21 @@
 <body>
     <div class="fundo">
         <div class="DivPrincipal">
-            <h1>Calculadora</h1>
-            <button id="botão" onclick="exibir()">Start</button>
+            <h1>CALCULADORA</h1>
+            <button id="botão" onclick="exibir()">START</button>
 
         </div>
+
         <div class="SegundaPágina">
-            <input id="inputvalor1" placeholder="Digite aqui um número"></input>
-            <input id="inputvalor2" placeholder="Digite aqui um segundo número"></input>
-            <input id="inputoperacao" placeholder="Digite aqui a operação desejada"></input>
-            <button type="submit" id="botaoCalcular" onclick="VerificarOperacao();">Calcular</button>
+            <input id="inputvalor1" placeholder="DIGITE UM NÚMERO"></input>
+            <input id="inputvalor2" placeholder="DIGITE UM SEGUNDO NÚMERO"></input>
+            <input id="inputoperacao" placeholder="DIGITE A OPERAÇÃO DESEJADA"></input>
+            <div class="divBotoes">
+                <button type="submit" id="botaoCalcular" onclick="VerificarOperacao();">CALCULAR</button>
+                <button type="submit" id="botaoRetornar" onclick="RetornarPagina();">VOLTAR</button>
+            </div>
         </div>
+
         <div class="páginaResultado">
             <p></p>
         </div>

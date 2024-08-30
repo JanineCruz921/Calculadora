@@ -15,9 +15,9 @@ function VerificarOperacao(a, b) {
     SegundaPágina.style.display = "none"
 
     if (Operação == "+" || Operação == "soma") {
-        páginaResultado.innerText = "O resultado é: " + (soma(parseInt(Numero1), parseInt(Numero2)))
+        páginaResultado.innerText = "O RESULTADO É: " + (soma(parseInt(Numero1), parseInt(Numero2)))
         var novoBotao = document.createElement("button")
-        novoBotao.innerText = "Voltar"
+        novoBotao.innerText = "VOLTAR"
         páginaResultado.append(novoBotao)
         novoBotao.addEventListener("click", exibir)
         novoBotao.addEventListener("click", limparInput)
@@ -25,27 +25,27 @@ function VerificarOperacao(a, b) {
         //alert(soma(parseInt(Numero1), parseInt(Numero2))) 
         //parseInt foi usado para os valores não serem concatenados
     } else if (Operação == "-" || Operação == "subtração") {
-        páginaResultado.innerText = "O resultado é: " + (subtracao(parseInt(Numero1), parseInt(Numero2)))
+        páginaResultado.innerText = "O RESULTADO É: " + (subtracao(parseInt(Numero1), parseInt(Numero2)))
         var novoBotao = document.createElement("button")
-        novoBotao.innerText = "Voltar"
+        novoBotao.innerText = "VOLTAR"
         páginaResultado.append(novoBotao)
         novoBotao.addEventListener("click", exibir)
         novoBotao.addEventListener("click", limparInput)
         //Os parâmetros foram chamados dentro da função
         //páginaResultado.innerText = "O resultado é: " + (subtracao(parseInt(Numero1), parseInt(Numero2)))
     } else if (Operação == "x" || Operação == "multiplicação") {
-        páginaResultado.innerText = "O resultado é: " + (multiplicacao(parseInt(Numero1), parseInt(Numero2)))
+        páginaResultado.innerText = "O RESULTADO É: " + (multiplicacao(parseInt(Numero1), parseInt(Numero2)))
         var novoBotao = document.createElement("button")
-        novoBotao.innerText = "Voltar"
+        novoBotao.innerText = "VOLTAR"
         páginaResultado.append(novoBotao)
         novoBotao.addEventListener("click", exibir)
         novoBotao.addEventListener("click", limparInput)
         //alert(multiplicacao(parseInt(Numero1), parseInt(Numero2))) 
         //O alert foi chamado dentro da função
     } else if (Operação == "/" || Operação == "divisão") {
-        páginaResultado.innerText = "O resultado é: " + (divisao(parseInt(Numero1), parseInt(Numero2)))
+        páginaResultado.innerText = "O RESULTADO: " + (divisao(parseInt(Numero1), parseInt(Numero2)))
         var novoBotao = document.createElement("button")
-        novoBotao.innerText = "Voltar"
+        novoBotao.innerText = "VOLTAR"
         páginaResultado.append(novoBotao)
         novoBotao.addEventListener("click", exibir)
         novoBotao.addEventListener("click", limparInput)
@@ -76,6 +76,11 @@ function exibir() {
     páginaResultado.style.display = "none";
 }
 
+function RetornarPagina(){
+    SegundaPágina.style.display = "none";
+    DivPrincipal.style.display = "flex";
+    páginaResultado.style.display = "none";
+}
 function limparInput(){
     document.querySelector("#inputvalor1").value = "";
     document.querySelector("#inputvalor2").value = "";

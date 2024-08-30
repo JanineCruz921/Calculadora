@@ -32,7 +32,7 @@ Body {
 #botão {
     height: 10%;
     width: 70%;
-    background-color: rgb(75, 4, 119);
+    background-image: linear-gradient(45deg, rgb(79, 3, 146), rgb(67, 1, 94));
     color: #fff;
     border-style: none;
     border-radius: 15px;
@@ -66,19 +66,46 @@ Body {
     border-style: none;
 }
 
+.divBotoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    margin-top: 5%;
+}
+
 #botaoCalcular{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
-    width: 50%;
-    background-color: rgb(66, 66, 66);
+    height: 90%;
+    width: 25%;
+    background-image: linear-gradient(45deg, rgb(79, 3, 146), rgb(67, 1, 94));
     color: #ffffff;
     border-radius: 8px;
     border-style: none;
     margin-top: 5%;
     font-weight: 900;
     font-size: 100%;
+
+}
+
+#botaoRetornar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 25%;
+    background-image: linear-gradient(45deg, rgb(79, 3, 146), rgb(67, 1, 94));
+    color: #ffffff;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 5%;
+    font-weight: 900;
+    font-size: 100%;
+    margin-left: 2%;
 
 }
 
@@ -98,7 +125,7 @@ Body {
 .páginaResultado button{
     height: 10%;
     width: 50%;
-    background-color: rgb(75, 4, 119);
+    background-image: linear-gradient(45deg, rgb(79, 3, 146), rgb(67, 1, 94));
     margin-top: 5%;
     color: #fff;
     border-style: none;
@@ -108,15 +135,13 @@ Body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.SegundaPágina button:hover{
-    background-color: rgb(66, 67, 67);
+.divBotoes button:hover{
     color: #fff;
     cursor: pointer;
 }
 
 #botão:hover{
     background-color: rgb(126, 3, 241);
-    color: black;
     cursor: pointer;
 }
 
